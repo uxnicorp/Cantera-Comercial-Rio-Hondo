@@ -7,14 +7,11 @@
 }
 
 :root {
-  /* Colores base */
   --color-text-primary: #1F1F1F;
   --color-text-secondary: #4B4B4B;
   --color-bg-light: #F2F2F2;
   --color-bg-white: #FFFFFF;
   --color-accent: #B03A2E;
-  
-  /* Tipografía */
   --font-headings: 'Montserrat', sans-serif;
   --font-body: 'Inter', sans-serif;
 }
