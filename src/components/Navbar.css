@@ -1,0 +1,239 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg-white);
+  border-bottom: 1px solid var(--color-bg-light);
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  background-color: var(--color-bg-light);
+  border-color: var(--color-bg-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.brand-text h1 {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.navbar-tagline {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navbar-menu li a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navbar-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: var(--color-accent);
+}
+
+.navbar-menu li a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  color: var(--color-accent) !important;
+  font-weight: 600 !important;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  position: relative;
+}
+
+.navbar-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+.navbar-toggle.active span {
+  background-color: var(--color-bg-white);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .brand-text h1 {
+    font-size: 1.1rem;
+  }
+
+  .navbar-tagline {
+    font-size: 0.6rem;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(31, 31, 31, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .navbar-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-menu li {
+    width: auto;
+    padding: 0;
+    border-bottom: none;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-menu.active li {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .navbar-menu.active li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .navbar-menu.active li:nth-child(2) {
+    transition-delay: 0.15s;
+  }
+
+  .navbar-menu.active li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+
+  .navbar-menu.active li:nth-child(4) {
+    transition-delay: 0.25s;
+  }
+
+  .navbar-menu li a {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-bg-white);
+    letter-spacing: -0.02em;
+  }
+
+  .navbar-menu li a:hover {
+    color: var(--color-accent);
+  }
+
+  .nav-cta {
+    color: var(--color-accent) !important;
+  }
+
+  .navbar-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .navbar-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-text h1 {
+    font-size: 0.95rem;
+  }
+
+  .navbar-tagline {
+    font-size: 0.55rem;
+  }
+}
