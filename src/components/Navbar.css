@@ -124,7 +124,6 @@
   background-color: var(--color-bg-white);
 }
 
-/* Mobile */
 @media (max-width: 768px) {
   .navbar-container {
     padding: 1rem 1.5rem;
