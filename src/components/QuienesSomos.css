@@ -6,15 +6,17 @@
 .quienes-container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1rem; /* Padding interno para pantallas pequeñas */
 }
 
 .quienes-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 2rem; /* Tamaño base */
   font-weight: 700;
-  color: #1f1f1f;
+  color: #5a2f1e; /* Marrón oscuro */
   margin-bottom: 2rem;
   position: relative;
+  text-align: left; /* Alineado a la izquierda */
 }
 
 .quienes-title::after {
@@ -22,8 +24,8 @@
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #b03a2e;
-  margin-top: 0.5rem;
+  background-color: #b03a2e; /* Línea de acento debajo del título */
+  margin: 0.5rem 0 0 0; /* Alineada a la izquierda */
 }
 
 .quienes-container p {
@@ -32,4 +34,46 @@
   line-height: 1.8;
   color: #4b4b4b;
   margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Media queries para pantallas medianas */
+@media (max-width: 992px) {
+  .quienes-title {
+    font-size: 1.75rem;
+  }
+
+  .quienes-container p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .quienes-somos {
+    padding: 4rem 1.5rem;
+  }
+
+  .quienes-title {
+    font-size: 1.5rem;
+  }
+
+  .quienes-container p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Media queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .quienes-somos {
+    padding: 3rem 1rem;
+  }
+
+  .quienes-title {
+    font-size: 1.25rem;
+  }
+
+  .quienes-container p {
+    font-size: 0.85rem;
+  }
 }
