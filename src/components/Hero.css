@@ -1,0 +1,74 @@
+.hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Overlay con degradado elegante */
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 8%;
+}
+
+/* Título principal */
+.hero-overlay h1 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+/* Línea decorativa sutil */
+.hero-overlay h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c9a24d; /* tono arena */
+  margin-top: 12px;
+}
+
+/* Subtítulo */
+.hero-overlay p {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 520px;
+  line-height: 1.6;
+  margin-top: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-overlay {
+    padding: 0 6%;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.05rem;
+  }
+}
