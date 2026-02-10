@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 function Navbar() {
@@ -20,13 +20,33 @@ function Navbar() {
     }
   };
 
+  // efecto scroll para navbar transparente → sólido
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('solid');
+        navbar.classList.remove('transparent');
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('solid');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className="navbar transparent">
       <div className="navbar-container">
         <div className="navbar-brand">
           <div className="brand-text">
-            <h1>Comercial Río Hondo</h1>
-            <span className="navbar-tagline">Áridos · Construcción · Infraestructura</span>
+            <h1>
+              <span>COMERCIAL</span> <span>RÍO HONDO</span>
+            </h1>
+            <span className="navbar-tagline">ÁRIDOS · CONSTRUCCIÓN · INFRAESTRUCTURA</span>
           </div>
         </div>
 
