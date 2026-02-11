@@ -26,6 +26,19 @@
   gap: 1rem;
 }
 
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .footer-brand-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
@@ -251,6 +264,10 @@
     padding: 3rem 1.5rem 2rem;
   }
 
+  .footer-logo {
+    width: 50px;
+  }
+
   .footer-main {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -259,6 +276,10 @@
   .footer-about {
     text-align: center;
     align-items: center;
+  }
+
+  .footer-brand-header {
+    justify-content: center;
   }
 
   .footer-brand-description {
@@ -292,8 +313,12 @@
     padding: 2.5rem 1rem 1.5rem;
   }
 
+  .footer-logo {
+    width: 45px;
+  }
+
   .footer-brand-name {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .footer-main {

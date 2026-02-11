@@ -63,7 +63,6 @@ function Contact() {
         </div>
 
         <div className="contact-content">
-          {/* Formulario - Izquierda */}
           <div className="form-container">
             <div className="form-header">
               <h3 className="form-title">Envianos tu Consulta</h3>
@@ -176,7 +175,6 @@ function Contact() {
             </form>
           </div>
 
-          {/* Información + Mapa - Derecha */}
           <div className="contact-info-container">
             <h3 className="info-title">Información de Contacto</h3>
             

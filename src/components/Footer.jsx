@@ -1,4 +1,5 @@
 import './Footer.css';
+import logo from '../assets/icon.png';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,9 +15,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-main">
-          {/* Columna 1: Marca */}
           <div className="footer-column footer-about">
-            <h3 className="footer-brand-name">Comercial Río Hondo SRL</h3>
+            <div className="footer-brand-header">
+              <img src={logo} alt="Logo Comercial Río Hondo" className="footer-logo" />
+              <h3 className="footer-brand-name">Comercial Río Hondo SRL</h3>
+            </div>
             <p className="footer-brand-description">
               Líderes en la extracción y comercialización de áridos y triturados pétreos. 
               Calidad garantizada para obras civiles y de infraestructura.
@@ -38,7 +41,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Columna 2: Navegación */}
           <div className="footer-column footer-nav">
             <h4 className="footer-column-title">Navegación</h4>
             <nav className="footer-nav-list">
@@ -50,7 +52,6 @@ function Footer() {
             </nav>
           </div>
 
-          {/* Columna 3: Productos */}
           <div className="footer-column footer-products">
             <h4 className="footer-column-title">Productos</h4>
             <ul className="footer-list">
@@ -61,7 +62,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Columna 4: Contacto */}
           <div className="footer-column footer-contact">
             <h4 className="footer-column-title">Contacto</h4>
             <ul className="footer-contact-list">

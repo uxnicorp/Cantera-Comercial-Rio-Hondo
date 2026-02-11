@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from '../assets/icon.png';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,6 +43,7 @@ function Navbar() {
     <nav className="navbar transparent">
       <div className="navbar-container">
         <div className="navbar-brand" onClick={() => scrollToSection('inicio')} style={{ cursor: 'pointer' }}>
+          <img src={logo} alt="Logo Comercial Río Hondo" className="navbar-logo" />
           <div className="brand-text">
             <h1>
               <span>COMERCIAL</span> <span>RÍO HONDO</span>

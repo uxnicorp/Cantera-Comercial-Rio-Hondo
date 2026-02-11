@@ -51,6 +51,13 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  gap: 0.8rem;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-text {
@@ -199,6 +206,10 @@
 }
 
 @media (max-width: 480px) {
+  .navbar-logo {
+    height: 35px;
+  }
+
   .brand-text h1 {
     font-size: 1rem;
   }
@@ -213,6 +224,10 @@
     max-width: 1700px;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .navbar-logo {
+    height: 60px;
   }
 
   .brand-text h1 {
