@@ -109,6 +109,7 @@ function Gallery() {
                       className="gallery-video"
                       preload="metadata"
                       loop
+                      muted
                       onClick={(e) => {
                         if (e.target.paused) {
                           e.target.play();
