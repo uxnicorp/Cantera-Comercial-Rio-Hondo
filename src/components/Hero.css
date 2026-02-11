@@ -6,7 +6,7 @@
   position: relative;
 }
 
-/* Overlay con degradado elegante */
+
 .hero-overlay {
   height: 100%;
   width: 100%;
@@ -24,7 +24,6 @@
   padding: 0 8%;
 }
 
-/* Título principal */
 .hero-overlay h1 {
   color: #ffffff;
   font-size: 3.5rem;
@@ -43,19 +42,19 @@
   margin-top: 12px;
 }
 
-/* Subtítulo */
+
 .hero-overlay p {
   color: #e0e0e0;
   font-size: 1.2rem;
   font-weight: 300;
-  max-width: 100%;       /* ocupa todo el ancho posible */
+  max-width: 100%;       
   line-height: 1.6;
   margin-top: 0.8rem;
-  white-space: nowrap;   /* evita que se rompa en dos líneas */
-  overflow-x: auto;      /* agrega scroll horizontal si no entra */
+  white-space: nowrap;  
+  overflow-x: auto;      
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
   .hero {
     height: 80vh;
