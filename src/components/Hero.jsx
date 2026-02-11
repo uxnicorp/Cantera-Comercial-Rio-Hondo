@@ -11,8 +11,7 @@ export default function Hero() {
       <div className="hero-overlay">
         <h1>Soluciones en áridos para la construcción</h1>
         <p>
-          Calidad, logística y experiencia para obras civiles y de
-          infraestructura
+          Calidad, logística y experiencia para obras civiles y de infraestructura
         </p>
       </div>
     </section>

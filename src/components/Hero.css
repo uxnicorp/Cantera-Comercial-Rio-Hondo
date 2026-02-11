@@ -34,13 +34,12 @@
   position: relative;
 }
 
-/* Línea decorativa sutil */
 .hero-overlay h1::after {
   content: "";
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #c9a24d; /* tono arena */
+  background-color: #c9a24d;
   margin-top: 12px;
 }
 
@@ -49,13 +48,15 @@
   color: #e0e0e0;
   font-size: 1.2rem;
   font-weight: 300;
-  max-width: 520px;
+  max-width: 100%;       /* ocupa todo el ancho posible */
   line-height: 1.6;
   margin-top: 0.8rem;
+  white-space: nowrap;   /* evita que se rompa en dos líneas */
+  overflow-x: auto;      /* agrega scroll horizontal si no entra */
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hero {
     height: 80vh;
   }
@@ -65,10 +66,38 @@
   }
 
   .hero-overlay h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
   .hero-overlay p {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.95rem;
   }
 }
