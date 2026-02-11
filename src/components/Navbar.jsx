@@ -41,7 +41,7 @@ function Navbar() {
   return (
     <nav className="navbar transparent">
       <div className="navbar-container">
-        <div className="navbar-brand">
+        <div className="navbar-brand" onClick={() => scrollToSection('inicio')} style={{ cursor: 'pointer' }}>
           <div className="brand-text">
             <h1>
               <span>COMERCIAL</span> <span>RÍO HONDO</span>
@@ -69,6 +69,9 @@ function Navbar() {
           </li>
           <li>
             <a onClick={() => scrollToSection('productos')}>Productos</a>
+          </li>
+          <li>
+            <a onClick={() => scrollToSection('galeria')}>Galería</a>
           </li>
           <li>
             <a onClick={() => scrollToSection('contacto')} className="nav-cta">

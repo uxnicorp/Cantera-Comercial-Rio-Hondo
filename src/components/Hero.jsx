@@ -6,6 +6,7 @@ export default function Hero() {
   return (
     <section
       className="hero"
+      id="inicio"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="hero-overlay">

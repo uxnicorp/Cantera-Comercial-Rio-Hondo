@@ -2,7 +2,7 @@ import './QuienesSomos.css';
 
 function QuienesSomos() {
   return (
-    <section className="quienes-somos">
+    <section className="quienes-somos" id="nosotros">
       <div className="quienes-container">
         <h2 className="quienes-title">Quiénes somos</h2>
 
