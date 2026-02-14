@@ -41,7 +41,7 @@ function Gallery() {
       type: 'image',
       src: img2,
       alt: 'Material pétreo de calidad',
-      title: 'Materiales Premium',
+      title: 'Materiales de primera calidad',
       description: 'Áridos clasificados según normas de calidad'
     },
     {
@@ -86,7 +86,6 @@ function Gallery() {
           <h2 className="gallery-title">Nuestra Cantera en Acción</h2>
           <p className="gallery-subtitle">
             Conocé nuestras instalaciones, procesos de producción y la calidad de nuestros materiales. 
-            Operamos con tecnología moderna para garantizar los mejores estándares.
           </p>
         </div>
 

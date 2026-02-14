@@ -45,9 +45,7 @@ function Navbar() {
         <div className="navbar-brand" onClick={() => scrollToSection('inicio')} style={{ cursor: 'pointer' }}>
           <img src={logo} alt="Logo Comercial Río Hondo" className="navbar-logo" />
           <div className="brand-text">
-            <h1>
-              <span>COMERCIAL</span> <span>RÍO HONDO</span>
-            </h1>
+            <h1>COMERCIAL RÍO HONDO</h1>
             <span className="navbar-tagline">ÁRIDOS · CONSTRUCCIÓN · INFRAESTRUCTURA</span>
           </div>
         </div>

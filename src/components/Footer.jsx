@@ -18,7 +18,7 @@ function Footer() {
           <div className="footer-column footer-about">
             <div className="footer-brand-header">
               <img src={logo} alt="Logo Comercial Río Hondo" className="footer-logo" />
-              <h3 className="footer-brand-name">Comercial Río Hondo SRL</h3>
+              <h3 className="footer-brand-name">Comercial Río Hondo</h3>
             </div>
             <p className="footer-brand-description">
               Líderes en la extracción y comercialización de áridos y triturados pétreos. 
@@ -93,7 +93,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {currentYear} Comercial Río Hondo SRL. Todos los derechos reservados.
+            © {currentYear} Comercial Río Hondo. Todos los derechos reservados.
           </p>
           <p className="footer-designer">
             Diseñado por{' '}
