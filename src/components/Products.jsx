@@ -1,4 +1,9 @@
 import './Products.css';
+import piedra1938 from '../assets/19-38.jpeg';
+import piedra619 from '../assets/6-19.jpeg';
+import piedra019 from '../assets/0-19.jpeg';
+import base032 from '../assets/0-32.jpeg';
+import arena06 from '../assets/0-6.jpeg';
 
 function Products() {
   const products = [
@@ -11,22 +16,38 @@ function Products() {
         'Obras de mayor exigencia',
         'Estructuras que requieren alta resistencia'
       ],
+      image: piedra1938,
       imageText: 'Material resistente y confiable, utilizado en hormigón de gran volumen y obras de mayor exigencia.'
     },
     {
       id: 2,
-      name: 'Piedra 3/4',
-      description: 'Árido indicado para hormigón de menor volumen, ideal para obras civiles y proyectos donde se necesita una granulometría más controlada.',
+      name: 'Piedra 6/19',
+      description: 'Árido de granulometría media, ideal para hormigones estructurales, contrapisos y carpetas. Ofrece excelente trabajabilidad y resistencia mecánica.',
       applications: [
-        'Hormigón de menor volumen',
-        'Obras civiles',
-        'Proyectos con granulometría controlada'
+        'Hormigón estructural',
+        'Contrapisos y carpetas',
+        'Losas y vigas',
+        'Obras que requieren menor relación agua/cemento'
       ],
-      imageText: 'Ideal para construcción civil y proyectos que demandan control granulométrico preciso.'
+      image: piedra619,
+      imageText: 'Granulometría óptima que garantiza menor consumo de cemento y mejor trabajabilidad en hormigones estructurales.'
     },
     {
       id: 3,
-      name: 'Base 0/38',
+      name: 'Piedra 0/19',
+      description: 'Árido fino a medio, ideal para hormigones y mezclas de menor volumen. Granulometría controlada que asegura excelente trabajabilidad.',
+      applications: [
+        'Hormigón de menor volumen',
+        'Obras civiles',
+        'Mezclas y contrapisos',
+        'Proyectos con granulometría controlada'
+      ],
+      image: piedra019,
+      imageText: 'Ideal para construcción civil y proyectos que demandan control granulométrico preciso.'
+    },
+    {
+      id: 4,
+      name: 'Base 0/32',
       description: 'Material compuesto por áridos con contenido arcilloso, especialmente utilizado en la construcción y mejoramiento de caminos, accesos y trabajos de compactación.',
       applications: [
         'Construcción y mejoramiento de caminos',
@@ -34,10 +55,11 @@ function Products() {
         'Trabajos de compactación',
         'Bases de caminos rurales'
       ],
+      image: base032,
       imageText: 'Se destaca por su composición arcillosa y característico color rojizo, que mejora notablemente la compactación y durabilidad del terreno.'
     },
     {
-      id: 4,
+      id: 5,
       name: 'Arena de trituración 0/6',
       description: 'Árido fino apto para la fabricación de placas y bloques, así como para su uso en mezclas asfálticas y tareas de corrección y mejoramiento de caminos.',
       applications: [
@@ -46,6 +68,7 @@ function Products() {
         'Corrector y mejorador de caminos',
         'Insumo para construcción civil'
       ],
+      image: arena06,
       imageText: 'Utilizada como corrector y mejorador de caminos, y como insumo clave en la fabricación de placas, bloques y mezclas asfálticas.'
     }
   ];
@@ -64,8 +87,8 @@ function Products() {
         <div className="products-grid">
           {products.map((product) => (
             <article key={product.id} className="product-card">
-              <div className="product-image-placeholder">
-                <div className="placeholder-overlay"></div>
+              <div className="product-image">
+                <img src={product.image} alt={product.name} loading="lazy" />
               </div>
               
               <div className="product-content">

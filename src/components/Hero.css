@@ -47,11 +47,9 @@
   color: #e0e0e0;
   font-size: 1.2rem;
   font-weight: 300;
-  max-width: 100%;       
+  max-width: 600px;       
   line-height: 1.6;
   margin-top: 0.8rem;
-  white-space: nowrap;  
-  overflow-x: auto;      
 }
 
 
@@ -70,6 +68,7 @@
 
   .hero-overlay p {
     font-size: 1.1rem;
+    max-width: 100%;
   }
 }
 
@@ -84,6 +83,7 @@
 
   .hero-overlay p {
     font-size: 1rem;
+    max-width: 100%;
   }
 }
 
@@ -98,5 +98,6 @@
 
   .hero-overlay p {
     font-size: 0.95rem;
+    max-width: 100%;
   }
 }
