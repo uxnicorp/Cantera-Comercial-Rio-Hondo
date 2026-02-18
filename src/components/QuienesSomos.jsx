@@ -7,7 +7,7 @@ function QuienesSomos() {
         <h2 className="quienes-title">Quiénes somos</h2>
 
         <p>
-          Comercial Río Hondo SRL es una empresa dedicada a la producción y
+          Comercial Río Hondo es una empresa dedicada a la producción y
           comercialización de áridos desde el año 2015, brindando soluciones
           confiables para obras de infraestructura, construcción y proyectos
           particulares.
