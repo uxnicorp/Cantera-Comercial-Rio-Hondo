@@ -42,7 +42,7 @@ function Gallery() {
       src: img2,
       alt: 'Material pétreo de calidad',
       title: 'Materiales de primera calidad',
-      description: 'Áridos clasificados según normas de calidad'
+      description: 'Áridos calificados según normas de calidad'
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ function Gallery() {
       src: img3,
       alt: 'Stock de piedra',
       title: 'Gran Capacidad',
-      description: 'Disponibilidad inmediata para entregas en obra'
+      description: 'Disponibilidad inmediata para entregas en cantera'
     },
     {
       id: 5,
@@ -66,7 +66,7 @@ function Gallery() {
       src: video2,
       alt: 'Maquinaria en operación',
       title: 'Equipamiento Pesado',
-      description: 'Tecnología para procesos de alta eficiencia',
+      description: '',
       featured: true
     },
     {
