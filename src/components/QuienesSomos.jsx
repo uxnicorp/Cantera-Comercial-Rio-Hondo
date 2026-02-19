@@ -14,7 +14,7 @@ function QuienesSomos() {
         </p>
 
         <p>
-          Ubicados en Villa Río Hondo, en el sector de Canteras El Martirizado,
+          Ubicados en departamento Río Hondo, localidad El Martirizado.
           abastecemos a empresas del rubro y acompañamos el desarrollo de
           caminos, loteos, accesos y obras viales.
         </p>
