@@ -37,10 +37,8 @@ function Products() {
       name: 'Piedra 0/19',
       description: 'Árido fino a medio, ideal para hormigones y mezclas de menor volumen. Granulometría controlada que asegura excelente trabajabilidad.',
       applications: [
-        'Hormigón de menor volumen',
         'Obras civiles',
-        'Mezclas y contrapisos',
-        'Proyectos con granulometría controlada'
+        'Mejoramiento de caminos y corrector'
       ],
       image: piedra019,
       imageText: 'Ideal para construcción civil y proyectos que demandan control granulométrico preciso.'
